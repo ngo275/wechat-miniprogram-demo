@@ -28,19 +28,23 @@ https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html
 
 ミニプログラムは海外の法人も作成可能だが、事業内容によってはICPライセンスの取得が必要になるので注意が必要だ。
 
+## 外部APIの制限
 ミニプログラムでは利用しているAPIのエンドポイントのドメインを管理画面で登録する必要がある。開発時はドメインチェックのフラグをオフにしておくとよいだろう。 `project.config.json` の `urlCheck` を `false` にする。
 
 ```json
 "setting": {
-	"urlCheck": false,
-	"es6": true,
-	"postcss": true,
-	"minified": true,
-	"newFeature": true,
-	"nodeModules": false,
-	"autoAudits": false
+  "urlCheck": false,
+  "es6": true,
+  "postcss": true,
+  "minified": true,
+  "newFeature": true,
+  "nodeModules": false,
+  "autoAudits": false
 }
 ```
+
+ドメインに追加してもICPに登録されていないドメインは利用できないので注意すること。たとえば、Googleクラウドでホスティングしているものも利用できない。Tencentクラウドでホスティングすれば問題ない。
+
 
 ## データの保持
 
