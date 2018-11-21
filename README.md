@@ -1,4 +1,4 @@
-# WeChat Mini Program
+# WeChat Mini Program 微信小程序
 
 ## ドキュメント
 
@@ -31,15 +31,15 @@ https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html
 ミニプログラムでは利用しているAPIのエンドポイントのドメインを管理画面で登録する必要がある。開発時はドメインチェックのフラグをオフにしておくとよいだろう。 `project.config.json` の `urlCheck` を `false` にする。
 
 ```json
-  "setting": {
-		"urlCheck": false,
-		"es6": true,
-		"postcss": true,
-		"minified": true,
-		"newFeature": true,
-		"nodeModules": false,
-		"autoAudits": false
-	}
+"setting": {
+	"urlCheck": false,
+	"es6": true,
+	"postcss": true,
+	"minified": true,
+	"newFeature": true,
+	"nodeModules": false,
+	"autoAudits": false
+}
 ```
 
 ## データの保持
